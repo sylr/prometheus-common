@@ -5,9 +5,9 @@ require (
 	github.com/alecthomas/units v0.0.0-20190924025748-f65c72e2690d // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
-	github.com/go-kit/kit v0.10.0
+	github.com/go-kit/kit/log v0.10.0
 	github.com/go-logfmt/logfmt v0.5.0 // indirect
-	github.com/golang/protobuf v1.4.2
+	github.com/golang/protobuf v1.4.3
 	github.com/jpillora/backoff v1.0.0 // indirect
 	github.com/julienschmidt/httprouter v1.3.0
 	github.com/konsorten/go-windows-terminal-sequences v1.0.3 // indirect
@@ -16,11 +16,11 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.7.1
 	github.com/prometheus/client_model v0.2.0
-	github.com/prometheus/procfs v0.1.3 // indirect
+	github.com/prometheus/procfs v0.6.0 // indirect
 	github.com/sirupsen/logrus v1.6.0
 	golang.org/x/net v0.0.0-20200625001655-4c5254603344
 	golang.org/x/oauth2 v0.0.0-20190226205417-e64efc72b421
-	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae
+	golang.org/x/sys v0.0.0-20210309074719-68d13333faf2
 	golang.org/x/text v0.3.2 // indirect
 	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/protobuf v1.23.0 // indirect
@@ -29,3 +29,9 @@ require (
 )
 
 go 1.17
+
+replace (
+	github.com/go-kit/kit => github.com/sylr/go-kit v0.10.1-0.20210514183318-9e15a6c04c36
+	github.com/go-kit/kit/log => github.com/sylr/go-kit/log v0.0.0-20210514183318-9e15a6c04c36
+	github.com/prometheus/client_golang => github.com/sylr/prometheus-client-golang v1.10.1-0.20210514171711-a5d35b429886
+)
